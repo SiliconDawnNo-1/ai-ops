@@ -16,6 +16,8 @@ def aggregate(runs_dir):
                 if not line:
                     continue
                 rec = json.loads(line)
+                if rec.get("status") == "no-data":
+                    continue  # 无产物不判负，只留账本审计，不进聚合
                 dim = _dimension(rec)
                 bucket = data.setdefault(dim, {"runs": 0, "scores": [], "passes": 0, "judged": 0})
                 bucket["runs"] += 1

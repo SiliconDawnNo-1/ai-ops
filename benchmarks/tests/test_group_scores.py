@@ -10,6 +10,7 @@ FIXTURE = [
     '{"case_id":"ex-001","dimension":"execution-discipline","status":"fail"}\n',
     '{"case_id":"ih-001","dimension":"infra-health","status":"pass"}\n',
     '{"case_id":"dr-001","dimension":"diagnosis-root-cause","score":3.0,"evidence_ref":"s3","judge":"user"}\n',
+    '{"case_id":"cg-001","dimension":"cross-domain-generalization","status":"no-data"}\n',
 ]
 
 def main():
@@ -23,6 +24,7 @@ def main():
         assert agg["diagnosis-root-cause"]["avg"] == 3.0
         assert agg["execution-discipline"]["pass_rate"] == 0.5, agg["execution-discipline"]
         assert agg["infra-health"]["pass_rate"] == 1.0
+        assert "cross-domain-generalization" not in agg, agg  # no-data 不判负、不进聚合
         md = render_markdown(agg)
         assert "reasoning-depth" in md and "4.0" in md and "4.2" in md and "0.5" in md
     print("ALL-PASS")
