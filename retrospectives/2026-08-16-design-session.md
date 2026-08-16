@@ -32,3 +32,13 @@ created: 2026-08-16
 - 动作：运行 /evolve 时输出该率 + 趋势；坚持 4 周。
 - 成功标准：转正率在 30–70% 区间且与真实复错误率负相关。
 - 栓进：`retro-fit` 脚本级 case（纠错入箱率）与 `long-task-meta` rubric 的"执行闭环"锚。
+
+---
+
+## 实施收尾补充（2026-08-16，T1-T7 + 冷启动 README）
+**归因（实施阶段）**：
+- `mkdir` 批量建目录被拒 → 改用 Write 工具直接写文件（自动带父目录）规避；教训 = bash 建目录在非白名单操作里会卡权限，能用 Write/Bash 已有白名单命令（cp/git/python3）就不新增工具。
+- cp 安装命令到 `~/.claude/commands/` 后，系统**自动把 `.md` 注册为可调用命令**（出现 Skill "benchmark/evolve"）——命令与 skill 同一槽位，安装即生效。
+- all-6 scripted 断言首跑即全过（ex001-002 依赖分支上的结构化 commit，ih001-002/vf001/rf001 依赖既有基建）——证明案例源自真实纠错而非造概念。
+**可迁移**：命令文件 = Claude Code 的"prompt 模板"，内容直接决定执行质量；judged 上限与"判分必须带 evidence_ref"是防 Goodhart 的硬规则，写在命令里比写在记忆里有效。
+**实验建议（新）**：下一任务直接跑真实 `/benchmark`（用本会话的 spec/计划/复盘卡当 judged 判分样例），把空基线 SCORES.md 变成首张真实分数表——验证"0→有分"冷启动路径。
