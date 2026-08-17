@@ -1,0 +1,10 @@
+{"case_id":"dr-001","dimension":"diagnosis-root-cause","score":4.43,"evidence_ref":"~/.claude/projects/-Users-wyf/memory/api-key-management-locations.md#dsh路由(08-17 dsh 启动失败+api error 归因)","judge":"user"}
+{"case_id":"lm-001","dimension":"long-task-meta","score":4.58,"evidence_ref":"retrospectives/2026-08-16-design-session.md#四段+归因+实验建议(执行闭环本次已兑现)","judge":"user"}
+{"case_id":"rs-001","dimension":"reasoning-depth","score":4.43,"evidence_ref":"/Users/wyf/Desktop/code/document/01-people/jeff_dean_analysis.md#四思想演进+五方法论+六信源","judge":"user"}
+{"case_id":"cg-001","dimension":"cross-domain-generalization","status":"no-data"}
+{"case_id":"ex-001","dimension":"execution-discipline","status":"fail","evidence_ref":"HEAD='benchmark: 2026-08-16 run' 无 (feat|spec|docs|chore|fix|refactor): 前缀;benchmark 自身提交违反 ex-001 断言"}
+{"case_id":"ex-002","dimension":"execution-discipline","status":"pass"}
+{"case_id":"ih-001","dimension":"infra-health","status":"pass"}
+{"case_id":"ih-002","dimension":"infra-health","status":"pass"}
+{"case_id":"rf-001","dimension":"retro-fit","status":"pass"}
+{"case_id":"vf-001","dimension":"validation","status":"pass"}
