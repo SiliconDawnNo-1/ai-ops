@@ -1,0 +1,10 @@
+{"case_id":"lm-001","dimension":"long-task-meta","score":4.75,"prediction":"下轮同产物re-score分差≤±0.3;若无新复盘卡则为连续第3次引用同卡→触发/evolve补漏提案","evidence_ref":"retrospectives/2026-08-16-design-session.md#归因控混淆+可迁移5条;执行闭环兑现:commit d0786ca/68366b4/fd5a541","judge":"agent-selfgrade"}
+{"case_id":"dr-001","dimension":"diagnosis-root-cause","score":4.15,"prediction":"下轮同产物re-score分差≤±0.5;若出现更近期真实归因产物则以其为准","evidence_ref":"document/04-tech/agent-training/day07_capstone/REPORT.md#四踩坑/复盘:4条机制层归因(浅拷贝共享内层/gather异常连坐/装饰器return层级/无reducer默认覆盖,后两条跨day同根因收敛)","judge":"agent-selfgrade"}
+{"case_id":"rs-001","dimension":"reasoning-depth","score":4.43,"prediction":"下轮同产物re-score分差≤±0.5","evidence_ref":"document/04-tech/agent-forensics.md#1.1控制权转移+1.2闭环反推表+1.3三反直觉点(非显然链≥3:概率字符串需强类型契约/IO密集故async默认/状态可序列化是记忆保险)","judge":"agent-selfgrade"}
+{"case_id":"cg-001","dimension":"cross-domain-generalization","status":"no-data","evidence_ref":"≤2026-08-23窗口内无范式卡产物(连续第3期)","judge":"agent-selfgrade"}
+{"case_id":"ex-001","dimension":"execution-discipline","status":"pass","evidence_ref":"HEAD=68366b4 'fix:'前缀,benchmark豁免规则生效"}
+{"case_id":"ex-002","dimension":"execution-discipline","status":"pass","evidence_ref":"14 commits ≥ 4"}
+{"case_id":"ih-001","dimension":"infra-health","status":"pass","evidence_ref":"MEMORY.md=42行 ≤ 200"}
+{"case_id":"ih-002","dimension":"infra-health","status":"pass","evidence_ref":"vault CLAUDE.md/INDEX.md 存在且非空"}
+{"case_id":"vf-001","dimension":"validation","status":"pass","evidence_ref":"README+spec 存在,spec 无 TBD"}
+{"case_id":"rf-001","dimension":"retro-fit","status":"pass","evidence_ref":"retrospectives/ 1张卡且含 ## 归因"}
