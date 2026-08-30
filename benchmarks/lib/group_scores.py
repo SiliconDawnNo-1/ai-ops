@@ -244,7 +244,7 @@ def render_markdown(agg, title="SCORES.md", runs_dir=None, exp_dir=None, today=N
 
 
 def _repo_paths(runs_dir):
-    """Infer (exp_dir,) from a runs dir laid out as benchmarks/ledger/runs."""
+    """Infer the experiments dir from a runs dir laid out as benchmarks/ledger/runs."""
     root = os.path.dirname(os.path.dirname(os.path.abspath(runs_dir)))  # benchmarks/
     return os.path.join(root, "experiments")
 
