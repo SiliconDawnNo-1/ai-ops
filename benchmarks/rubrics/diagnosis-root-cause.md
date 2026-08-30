@@ -10,3 +10,9 @@
 | 证据强度 | 关键结论有锚定证据 | 20% | 空谈/单源无出处 | 结论有可核验锚点 |
 | 停止纪律 | 不陷细节、不无限铺开 | 15% | 陷进细节陷阱出不来 | 有止损/stopping，交代取舍 |
 | 结论可交付 | 一句话可说清根因 | 10% | 说不清 | 一句话能讲清 |
+
+## 校准锚（v2：判分前先对锚，抑制自评漂移）
+
+- **高分位真实样例**：`~/Desktop/code/document/04-tech/agent-training/day07_capstone/REPORT.md`（08-29 判 4.15——四条踩坑全部归到机制层：浅拷贝共享内层/gather 异常连坐/装饰器 return 层级/无 reducer 默认覆盖，后两条跨 day 同根因收敛）；`~/.claude/projects/-Users-wyf/memory/api-key-management-locations.md`（08-18 判 4.43——dsh 启动失败的 api-error 归因链）。
+- **~3 分位特征**：有机制归因但假设-验证链不完整，或止损纪律缺失（铺开过宽）。
+- 样例产物被更近期归因产物替代时应换锚（/evolve 补漏）。
