@@ -1,0 +1,11 @@
+{"case_id":"lm-001","dimension":"long-task-meta","score":4.75,"prediction":"下轮同产物re-score分差≤±0.3;若无新复盘卡将连续第4次引用同卡→/evolve必须出新复盘卡或换锚","evidence_ref":"retrospectives/2026-08-16-design-session.md#归因+可迁移;执行闭环新增证据:v2重构(08-30)兑现卡片实践#3,exp-001成为第一张活实验卡","judge":"agent-selfgrade"}
+{"case_id":"dr-001","dimension":"diagnosis-root-cause","score":4.15,"prediction":"下轮同产物re-score分差≤±0.5;或以更近期真实归因产物为准","evidence_ref":"document/04-tech/agent-training/day07_capstone/REPORT.md#四踩坑/复盘:4条机制层归因,假设-验证锚仍弱(无显式假设树)","judge":"agent-selfgrade"}
+{"case_id":"rs-001","dimension":"reasoning-depth","score":4.43,"prediction":"下轮同产物re-score分差≤±0.5","evidence_ref":"document/04-tech/agent-forensics.md#1.1-1.3:控制权转移/概率字符串需强类型契约/IO密集async默认/状态可序列化,口径质疑锚仍弱","judge":"agent-selfgrade"}
+{"case_id":"cg-001","dimension":"cross-domain-generalization","score":4.48,"prediction":"下轮同产物re-score分差≤±0.5;若雷达深挖产生新范式卡(12-learn-and-agent体系)则以其为准","evidence_ref":"document/12-learn-and-agent/学习效能终极方案.md#§2.2精英维度12案例表(问题提炼4.5/调测闭环4/归因置信度4.5/泛化边界4.5/表征迁移5)","judge":"agent-selfgrade"}
+{"case_id":"ex-001","dimension":"execution-discipline","status":"pass","evidence_ref":"HEAD含benchmark:前缀豁免规则生效"}
+{"case_id":"ex-002","dimension":"execution-discipline","status":"pass","evidence_ref":"commits≥4"}
+{"case_id":"ih-001","dimension":"infra-health","status":"pass","evidence_ref":"MEMORY.md行数≤200"}
+{"case_id":"ih-002","dimension":"infra-health","status":"pass","evidence_ref":"vault CLAUDE.md/INDEX.md 非空"}
+{"case_id":"vf-001","dimension":"validation","status":"pass","evidence_ref":"README+spec存在,无TBD"}
+{"case_id":"vf-002","dimension":"validation","status":"pass","evidence_ref":"11案例frontmatter完整+judged rubric存在+实验卡状态合法,exit=0"}
+{"case_id":"rf-001","dimension":"retro-fit","status":"pass","evidence_ref":"retrospectives含##归因节"}
